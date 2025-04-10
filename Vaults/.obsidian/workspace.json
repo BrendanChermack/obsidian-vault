@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "9db179a9e54f4d31",
+    "type": "split",
+    "children": [
+      {
+        "id": "a886c072d26019be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a57b1e0982bf2a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "General Vault/Order Flow Series/1. Intro.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. Intro"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "37b0f2603b58b088",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d89fa64cb9785fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ce87c6efcc91a8c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "099ff2ff72621cad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "acc63cab7c39f5a8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3490c5c738aef051",
+    "type": "split",
+    "children": [
+      {
+        "id": "410836aa852e2b13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38e5bab60d5a2b61",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "739e9c14dca4b472",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "5d5dd38b30cd2427",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "975db0aa45b11519",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9a57b1e0982bf2a9",
+  "lastOpenFiles": [
+    "General Vault/Learning stocks/1. Stock Market Basics/0. Intro.md",
+    "General Vault/Order Flow Series/1. Intro.md",
+    "General Vault/Order Flow Series",
+    "General Vault/Learning stocks/6. Market Context",
+    "General Vault/Learning stocks/5. Supply and Demand",
+    "General Vault/Learning stocks/4. Psychology",
+    "General Vault/Learning stocks/Untitled/Untitled",
+    "General Vault/Learning stocks/Media/Stonks.png",
+    "General Vault/Learning stocks/1. Stock Market Basics/7. Technical Indicators.md",
+    "General Vault/Learning stocks/2. Getting Started",
+    "General Vault/Learning stocks/Stock Market Basics/1.md",
+    "General Vault/Learning stocks/1. Stock Market Basics/5. Chart Patterns.md",
+    "General Vault/Learning stocks/1. Stock Market Basics/4. Candlestick Patterns.md",
+    "General Vault/Learning stocks/1. Stock Market Basics/3. Support, Resistance and Trends.md",
+    "General Vault/Learning stocks/1. Stock Market Basics/2. Technical Analysis.md",
+    "General Vault/Learning stocks/1. Stock Market Basics/1. Terms and Concepts.md",
+    "General Vault/Learning stocks/Media/Pasted image 20250408085853.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408090756.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408085827.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408085050.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408084730.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408084405.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408073417.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408075410.png",
+    "General Vault/Learning stocks/Media/Pasted image 20250408072724.png",
+    "General Vault/Learning stocks/1. Stock Market Basics",
+    "General Vault/Learning stocks/Media",
+    "General Vault/Learning stocks",
+    "General Vault",
+    "ObsidianNotes/Learning stocks/Stock Market Basics/Intro.md",
+    "ObsidianNotes/Learning stocks/Stock Market Basics/3. Support, Resistance and Trends.md",
+    "ObsidianNotes/Learning stocks/Stock Market Basics/2. Technical Analysis.md",
+    "ObsidianNotes/Learning stocks/Stock Market Basics/1. Terms and Concepts.md"
+  ]
+}
