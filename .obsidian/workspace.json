@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "00291e742bea1998",
+    "type": "split",
+    "children": [
+      {
+        "id": "23dcc792052c4699",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3261692811225c00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/1. Stock Market Basics/5. Chart Patterns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5. Chart Patterns"
+            }
+          },
+          {
+            "id": "2c570749082f9f1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/1. Stock Market Basics/7. Technical Indicators.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "7. Technical Indicators"
+            }
+          },
+          {
+            "id": "8e3fc9c21cb92eba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. Trading Mentality"
+            }
+          },
+          {
+            "id": "34d43102ca5fff43",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/Media/{9CF67C9A-434D-4705-B751-51C8D38B6C2D}.png"
+              },
+              "icon": "lucide-image",
+              "title": "{9CF67C9A-434D-4705-B751-51C8D38B6C2D}"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d847da8a4768407",
+    "type": "split",
+    "children": [
+      {
+        "id": "94a37dc5a92033ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "383c354eb35a421d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "18fac76a3bf56410",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7c0b4698db363ffe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "89ada7ab8ed10d0e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7f2e0c40e1227d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "083d0df7e138ffc6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 3. Trading Mentality"
+            }
+          },
+          {
+            "id": "eec5ca4c7e2f0b11",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 3. Trading Mentality"
+            }
+          },
+          {
+            "id": "656ff6af8e5c20ea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a00d7084b545d6a9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 3. Trading Mentality"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8e3fc9c21cb92eba",
+  "lastOpenFiles": [
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/0. Intro.md",
+    "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/7. Technical Indicators.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/5. Chart Patterns.md",
+    "Vaults/General Vault/Learning stocks/Media/{0E47744F-DD82-4817-9409-6F512B1B0AD6}.png",
+    "Vaults/General Vault/Learning stocks/Media/{FFA9C2F9-B0A9-42BC-A59E-8A3F08E3FEE5}.png",
+    "Vaults/General Vault/Learning stocks/Media/{CC4823B0-F262-4B90-8AA4-A0E0509EB008}.png",
+    "Vaults/General Vault/Learning stocks/Media/{C16F2953-FBA9-4E1F-A3FA-58450E3E0971}.png",
+    "Vaults/General Vault/Learning stocks/Media/{FEE04A43-76F3-49CB-9018-BED44AFD4B23}.png",
+    "Vaults/General Vault/Learning stocks/Media/{9CF67C9A-434D-4705-B751-51C8D38B6C2D}.png",
+    "Vaults/General Vault/Learning stocks/Media/{B7F8F45C-7440-4B8D-A41F-D3CEDD848202}.png",
+    "Vaults/General Vault/Learning stocks/Media/{883835BD-F0CF-4E2D-825E-4D7203859250}.png",
+    "Vaults/General Vault/Learning stocks/Media/{67BE8426-CA77-4DD0-8FC3-1ECB844BD0E9}.png",
+    "Vaults/General Vault/Learning stocks/Media/{EDFCE25B-8E24-468B-A24C-60C55B8B746E}.png",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/4. Candlestick Patterns.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/3. Support, Resistance and Trends.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/1. Terms and Concepts.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/2. Technical Analysis.md"
+  ]
+}
