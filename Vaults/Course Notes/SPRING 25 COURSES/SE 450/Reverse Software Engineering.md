@@ -1,0 +1,184 @@
+[Zoom link]([https://minnstate.zoom.us/j/3295638261])
+
+3/24/2025 - Traditional symmetric key ciphers
+- Idea of symmetric key cipher
+	![[Pasted image 20250324140924.png]]
+- insecure channel has attackers in there middle
+- encryption: C = Ek (P)
+- Decryption: P = Dk (C)
+	- P = plain text
+	- E = encryption key
+	- C = cyphertext
+	- D = Decryption
+- Cryptanalysis
+	- creating secret codes
+	- breaking the coding is cryptanalysis
+	- ![[Pasted image 20250324141357.png]]
+	- ![[Pasted image 20250324141426.png]]
+	- Known plain text
+		- analyze the cipher text against the know plain text
+	- chosen plaintext attack
+		- ![[Pasted image 20250324141634.png]]
+		- has the plain text before hand
+	- chosen cipher text
+	- ![[Pasted image 20250324141718.png]]
+	- Monoalphabetic
+		- Move 3 characters in alphabetical order
+		- PT: hello -> CT: KHOOR
+			- ll => oo
+	- Not monoalphabetical
+		- PT: hello -> CT: ABNZF
+	- Caesar cipher or shift cipher
+		- ![[Pasted image 20250324142053.png]]
+		- ![[Pasted image 20250324142128.png]]
+		- plain text + k modulos 26 and we get c
+		- k is a const value
+		- ![[Pasted image 20250324142446.png]]
+		- encryption results
+		- k cannot be too big since if we do a high key number the remainder will end up too big
+		- decryption
+		- WTAAD
+		- ![[Pasted image 20250324142813.png]]
+	- brute forcing encryptions
+		- ![[Pasted image 20250324143404.png]]
+		- trail and error it
+	- most freq characters in english
+		- weighted likelyhood of each character
+	- statistical attack
+		- ![[Pasted image 20250324143620.png]]
+		- i = 14
+		- v = 13
+		- s = 12
+		- so i is probably e which means the key is 4
+	- multiplicative cipher
+		- multiple the text number by k
+		- ![[Pasted image 20250324144232.png]]
+	- play fair
+		- ![[Pasted image 20250324144424.png]]
+		- character position and move to the right one
+		- x is a bogus letter
+		- for l go where the row intersects with the col
+		- then reverse for o col then row
+- modern symmetric key ciphers
+	- advanced algo
+	- bits and logic gates
+	- substitution or transposition
+		- most common
+		- bit rep
+	- full-size key transpoisition
+		- using log8 = 2 (base 2)
+	- xor
+	- most modern AES and 3DES
+	- RSA
+
+
+COUPLE OF MISSED CLASSES
+
+4/2/2025
+- Module 13
+	-  procedures 1
+		- defining procedures (functions)
+			- procedures enclosed with proc and endp keywords
+			- what we need to know
+				- invocation sites
+				- passing args
+				- return values
+				- parameters and local vars
+				- ex:
+					- ![[Pasted image 20250402141327.png]]
+		- invocation sites
+			- functions being called multiple times
+			- ![[Pasted image 20250402141743.png]]
+		- passing params
+			- the stack is used to pass parameter from the caller to the procedure
+				- the push instructions before the call pass its parameter
+			- ![[Pasted image 20250402142431.png]]
+			- pushing before the call is similar to passing parameters in a typical function
+		- runtime stack
+			- LIFO
+				- last in first out
+			- process stack is managed by the CPU using special registers
+		- stack ops
+			- pushing
+			- popping
+			- ![[Pasted image 20250402143038.png]]
+			- pointer need to point to the last added value
+		- return values
+			- return values to the caller
+			- ![[Pasted image 20250402143529.png]]
+			- this instruction returns control to the caller.
+				- has nothing to do with the return value
+		- [assembly tutorial link](https://www.tutorialspoint.com/assembly_programming/assembly_procedures.htm)
+		- second lab in assignment 7 uses procedure
+		- ^ final exam type question
+			- tracing the code and get output
+		- one compiler for online compiler
+MISSED LECTURE
+
+4/7/25
+- Module 14
+	- anti-analysis techniques
+	- linear disassembly
+	- anti-disassembly
+	- linear disassembly weaknesses
+		- algo
+		- cant tell diff between code and data
+	- flow-oriented disassembly
+		- build a list of locations to assemble by examining code from entry
+	- anti-disassembly techniques - jump instructions with the same target
+		- 2 back to back conditional jumps that both point to the same target
+		- both are equivalent to unconditional jump
+		- disassemblers will always start by disassembling the false branch
+	- anti-disassembly techniques - jump instructions with a constant condition
+		- No call just jump
+		- xor - old and new value for same register
+		- jz jump if 0
+		- ![[Pasted image 20250407142813.png]]
+	- anit-disassembly techinques - impossible disassembly
+		- previous trics can be fixed by intructing IDA pro to ignore rouge byte and regard it as data rather than code
+		- disassemblers assume that each byte in the code belongs to only one instruction
+			- malware authors can break this chain
+			- inc eax and dec eax has no effect on the cpu state same as nop
+			- ![[Pasted image 20250407143106.png]]
+		- if detected
+		- decode the entire sequence
+		- overwriting the whole sequence
+		- could be other stuff though
+	- Assembly code analysis
+		- ![[Pasted image 20250407143250.png]]
+		- IDA pro
+			- very strong and goated
+		- hand trace the code
+
+MISSED CLASS FROM DRILL
+
+18 Memory forensics
+- Why?
+	- Live malware detection
+		- how this affects the memory
+		- incident handler
+		- who is doing what
+		- what they are affecting
+	- information available memory physical/vit dumps
+		- 2 techniques to analyze/manipulate
+		- run processes
+		- open files
+		- network connections
+		- objects by rootkits
+			- process thread connection etc.
+		- memory resistant malware
+		- unpacked/unencrypted images
+		- recently used files
+- Memory acquisition
+	- real machine
+		- need tools to dump the memory to a file
+		- 2 formats
+			- windows crash dump (notmyfault)
+			- raw memory dump
+		- tools
+			- comar toolkit
+	- virtual machine
+		- pause the machine
+		- memory is saved in .vmem file
+		- this file works as raw memory is dumped and can be analyzed by memory forensics toolkits
+	- 

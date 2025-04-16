@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "2849ff0d04223815",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c206925186a9eb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "372a8250b753d40a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Learning stocks/media/Pasted image 20250408085050.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250408085050"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "25efff3a6d3f2cb4",
+    "type": "split",
+    "children": [
+      {
+        "id": "21feabba0557bda2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "851cd715411fcc4f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c3daf966a5a71717",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6be4af9698b3dca7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4267b333b1d51f19",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe951c0d60209e8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eeb105604b4dcc47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SPRING 25 COURSES/CSCI 330/Programming concepts.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Programming concepts"
+            }
+          },
+          {
+            "id": "4013efa1fb65fac4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SPRING 25 COURSES/CSCI 330/Programming concepts.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Programming concepts"
+            }
+          },
+          {
+            "id": "f286e56fc574078b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "31c0f457a1bba3a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SPRING 25 COURSES/CSCI 330/Programming concepts.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Programming concepts"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "851cd715411fcc4f",
+  "lastOpenFiles": [
+    "Learning stocks/Stock Market Basics/1. Terms and Concepts.md",
+    "Learning stocks/Stock Market Basics/2. Technical Analysis.md",
+    "Learning stocks/Stock Market Basics/3. Support, Resistance and Trends.md",
+    "Learning stocks/media/Pasted image 20250408090756.png",
+    "SPRING 25 COURSES/Media/Pasted image 20250324144232.png",
+    "SPRING 25 COURSES/Media/Pasted image 20250402143529.png",
+    "Learning stocks/media/Pasted image 20250408085853.png",
+    "Learning stocks/media/Pasted image 20250408085827.png",
+    "Learning stocks/media/Pasted image 20250408085050.png",
+    "Learning stocks/media/Pasted image 20250408084730.png",
+    "Learning stocks/media/Pasted image 20250408084405.png",
+    "Learning stocks/Stock Market Basics/Intro.md",
+    "Learning stocks/media/Pasted image 20250408075410.png",
+    "Learning stocks/media/Pasted image 20250408073417.png",
+    "Learning stocks/media",
+    "SPRING 25 COURSES/SE 450/Reverse Software Engineering.md",
+    "Learning stocks/Untitled/Untitled",
+    "Learning stocks/Stock Market Basics",
+    "Learning stocks",
+    "SPRING 25 COURSES/Media",
+    "SPRING 25 COURSES/CSCI 330/Programming concepts.md",
+    "SPRING 25 COURSES",
+    "2025-03-21.md",
+    "SPRING 25 COURSES/SE 450",
+    "SCSU Course Notes.md",
+    "SPRING 25 COURSES/CSCI 330",
+    "create a link.md"
+  ]
+}
