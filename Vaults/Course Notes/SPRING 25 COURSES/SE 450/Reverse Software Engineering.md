@@ -181,4 +181,8 @@ MISSED CLASS FROM DRILL
 		- pause the machine
 		- memory is saved in .vmem file
 		- this file works as raw memory is dumped and can be analyzed by memory forensics toolkits
+	- DUMPIT
+- Volatility - investigating processes
+	- cmds
+	- ![[Pasted image 20250418140855.png]]
 	- 
