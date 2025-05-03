@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vaults/General Vault/Learning stocks/1. Stock Market Basics/5. Chart Patterns.md",
+                "file": "Vaults/Course Notes/SPRING 25 COURSES/SE 450/Final study guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Chart Patterns"
+              "title": "Final study guide"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+                "file": "Vaults/Course Notes/SPRING 25 COURSES/SE 450/Final study guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Trading Mentality"
+              "title": "Final study guide"
             }
           },
           {
@@ -61,8 +61,7 @@
               "title": "{9CF67C9A-434D-4705-B751-51C8D38B6C2D}"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,12 +208,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8e3fc9c21cb92eba",
+  "active": "3261692811225c00",
   "lastOpenFiles": [
-    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/0. Intro.md",
-    "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
-    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/7. Technical Indicators.md",
+    "{1DD07032-07C8-452B-A0CF-BD213CCD517F}.png",
+    "{66E32B34-1C54-494E-BE7B-675322577548}.png",
     "Vaults/General Vault/Learning stocks/1. Stock Market Basics/5. Chart Patterns.md",
+    "Vaults/Course Notes/SPRING 25 COURSES/SE 450/Final study guide.md",
+    "{1AE929F5-9258-4A6F-B61C-84A37C5D571A}.png",
+    "{45F70745-F8B9-42AA-B70F-67C12D730ADA}.png",
+    "Vaults/Course Notes/SPRING 25 COURSES/CSCI 330/Final study guide.md",
+    "Vaults/General Vault/Learning stocks/5. Market Context/3. Volume & Volatility & Momentum (VVM).md",
+    "Vaults/Course Notes/SPRING 25 COURSES/CSCI 332/Final study guide.md",
+    "Vaults/Course Notes/SPRING 25 COURSES/CSCI 332",
+    "Vaults/General Vault/Learning stocks/5. Market Context/2. Understand market context.md",
+    "Vaults/General Vault/Learning stocks/5. Market Context/1. Honest truths about day trading.md",
+    "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/0. Intro.md",
+    "Vaults/General Vault/Learning stocks/1. Stock Market Basics/7. Technical Indicators.md",
     "Vaults/General Vault/Learning stocks/Media/{0E47744F-DD82-4817-9409-6F512B1B0AD6}.png",
     "Vaults/General Vault/Learning stocks/Media/{FFA9C2F9-B0A9-42BC-A59E-8A3F08E3FEE5}.png",
     "Vaults/General Vault/Learning stocks/Media/{CC4823B0-F262-4B90-8AA4-A0E0509EB008}.png",
@@ -222,9 +232,6 @@
     "Vaults/General Vault/Learning stocks/Media/{FEE04A43-76F3-49CB-9018-BED44AFD4B23}.png",
     "Vaults/General Vault/Learning stocks/Media/{9CF67C9A-434D-4705-B751-51C8D38B6C2D}.png",
     "Vaults/General Vault/Learning stocks/Media/{B7F8F45C-7440-4B8D-A41F-D3CEDD848202}.png",
-    "Vaults/General Vault/Learning stocks/Media/{883835BD-F0CF-4E2D-825E-4D7203859250}.png",
-    "Vaults/General Vault/Learning stocks/Media/{67BE8426-CA77-4DD0-8FC3-1ECB844BD0E9}.png",
-    "Vaults/General Vault/Learning stocks/Media/{EDFCE25B-8E24-468B-A24C-60C55B8B746E}.png",
     "Vaults/General Vault/Learning stocks/1. Stock Market Basics/4. Candlestick Patterns.md",
     "Vaults/General Vault/Learning stocks/1. Stock Market Basics/3. Support, Resistance and Trends.md",
     "Vaults/General Vault/Learning stocks/1. Stock Market Basics/1. Terms and Concepts.md",
