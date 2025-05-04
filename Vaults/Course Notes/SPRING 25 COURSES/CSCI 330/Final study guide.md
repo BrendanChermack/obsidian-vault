@@ -263,3 +263,204 @@ Box<Integer> intBox    = new Obj2<>(); 
 Q 14. What is the Java event model? How is it used to deal with mouseclicks and button clicks?
 - It handles user-generated events like mouse presses, keyboard buttons, etc.
 - If we have a java GUI a user mouse input will create an event object like MouseEvent
+
+HW answers
+Q1: Explain the general subprogram characteristics and define the basic terms associated with subprograms.
+- Subprograms characteristics
+	- Each subprogram has a single entry point
+	- The calling program unit is suspended during execution of the called subprogram. so only one can run at a time
+	- control always returns to the caller when the subprogram execution ends
+- subprogram definition
+	- the interface and actions of the subprogram abstraction
+	- it's call is the explicit request that a specific subprogram be executed
+	- subprogram is said to be active after being called it is started but execution is not completed
+- subprogram header
+	- first part of a subprogram definition
+	- its purpose is to specify the kind of subprogram
+	- its name if not anonymous and list it's parameters
+Q2: Explain the terms actual parameters, formal parameters, positional parameters and keyword parameters with examples.
+- Formal parameters
+	- they are defined in the subprogram headers
+	- sometime called dummy variables since they are typically bound to storage only when the subprogram is called
+	- ex. void swap(int a, int b), a and b are formal parameters
+- actual parameters
+	- parameters provided in a subprogram call statement
+	- they are the specific data values or variables that are passed when the subprogram is executed
+	- actual parameters are different from formal ones since they have different restriction on their forms 
+	- swap1(int a, int b) then is called swap1(c, d), c and d are actual parameters
+- positional parameters
+	- binding between actual and formal parameters is done by their position in the parameter lists
+	- parameter in the call is bound to the first formal parameter in the header
+	- the second actual parameter is bound to the second formal, etc
+	- effective and safe as long as it is short
+	- ex. void add( int x, int y) and called as add (5, 10); 5 is the first actual bound to x which is the first formal and 10, the second actual, is bound to y the second formal by position
+	Q3: What are the different semantic models of parameter passing? Explain with examples.
+	- In Mode: 
+		- in this model the formal parameter reveive data from the corresponding actual paramter 
+		- the actual paramter is transmitted to the subprogram 
+		- the subprogram can use this value but typicall cannot change the actual parameter in the caller's env
+		- Ex. pass by value
+	- out mode:
+		- in this model the fromal parameter is transmitted data to the actual parameter
+		- no value is transmitted fromt he caller to the subprogram though this parameter
+		- the formal parameter typicall acts as a local variable where the result is computed and that result is transmitted back to the actual parameter in the caller just before control returns to the caller
+		- the actual must be a variable to recieve the result
+		- void fixer(out int x, out int y) has x and y as out mode parameters whose final values are transmitted back to the actual parameters when the function ends
+	- inout mode:
+		- the formal parameter does both
+		- it receives data  from the actual parameter at teh beginning of the sub program execution and it transmits data to the actual upon the subprograms execution and it transmits data to the actual parameter upon subprogram's completion
+		- this allows the subprogram to use the initial values of the data and modify it with the changes being reflected in the callers env
+		- ex. array list2 in a subprogram that adds list1 to list2 and returns the result as revised version of list2 is inout mode
+	Q4: What are the implementation models of parameter passing? How are they related to the semantic models? Explain.
+	- pass by value:
+		- The value of the actual parameter is copied to the initialize the formal parameter
+		- formal acts as a local variable within the subporgram 
+		- in mode semantics
+	- pass by result:
+		- no value is transmitted to the subprogram upon call
+		- formal acts as local variable
+		- just before the subprogram returns the final value of the formal is transmitted back to the corresponding actual parameter 
+		- needs the actual to be a variable to receive the it
+		- out mode semantics
+	- pass by value result:
+		- combo of pass by value and pass by result
+		- actual value initializes the fromal parameter when the subprogram is called
+		- formal acts as local variable
+		- when terminated the formals final value is copied to the actual parameter
+		- inout mode semantics
+	- pass by sharing data
+		- c++ & (aliasing)
+Q5: Explain the design issues for functions
+- are side effects allowed?
+	- functional side effects can cause problems when functions are called in expressions
+	- parameters to functions should be in mode to prevent side effecting through parameters of aliasing
+- what types can be returned?
+	- in diff langs the types functions can return changes
+	- c doesnt allow arrays or functions directly
+	- ada, python and ruby allow any type but ada cannot return functions
+- how many values can be returned?
+Q6: Present one argument against providing both statica and dynamic local variables in subprograms
+- it increases lang complexity and can confuse programmers since it introduces variables with the same scope but different life times
+Q7: 
+- what are the 2 kinds of abstraction 
+	- process abstraction
+		- has been a central concept since early lang
+		- provide a way to specify a process without detailing the implementation
+	- data abstraction
+		- followed process abstraction and is supported by operations defined as process abstractions
+- Define abstract data types
+	- a defined as a data structures
+	- typically in record form
+	- includes subprograms to manipulate its data
+	- access controls, details of the type can be hidden from external units
+	- instance of an abstract data type is an object
+	- all built in data types in high level languages are considered abstract data types
+- what are the advantages of the two parts of the definition of abstract data types
+	- packing of data objects with their associated operations
+		- better management of complex programs
+		- allows user defined data types
+		- allow for type checking of variables of that category
+		- aid modifiability by allowing type changes through a single statement
+	- info hiding
+		- hiding info from the user, accessible through provided operations is a key concept
+		- allows programs to be portable between implementations even if they underlying data representations differ
+		- prevents users from changing the hidden parts of the representation
+		- convenient and safe
+- what are the lang design requirements for a lang that supports abstract data types
+	- a syntactic unit must be provided that encloses the declared type and the prototypes of the subprogram that implements the operations
+	- the type must be hidden from clients but the abstraction should be visible
+- what are the lang design issues for abstract data types
+	- can the abstraction data types be parameterized
+	- what access controls are provided and how they are specified
+	- is the type physically separated from the implementations
+- from where are c++ obj allocated
+	- obj can be allocated from either the stack or heap
+	- so either stack dynamic or heap dynamic
+Q8: How are interfaces and abstract classes defined in java? why are they useful? How are these related to the concept of data abstractions and how are they different from concrete classes?
+- interfaces in java
+	- similar to class definitions but can contain only named constansts and method declarations
+	- it cannot contain constructors, nonabstract methods or variable declarations
+	- interface essentially defines only the specifications of a class
+	- a class doesnt inherit an interface
+	- to implement an interface the class must implement all of the methods whose specifications appear in the interface definition
+	- interfaces provide a kind of abstract class
+	- common substitute for multiple inheritance
+- Abstact classes in java
+	- similar to c++
+	- marked with keyword abstract
+	- abstract methods in a abstract are repped with jsut a method's header includes abstract keyword
+	- abstract classes can include instance variables and defined non abstract methods
+	- standard method protocol
+	- allowing classes to rpovide different implementations for that protocal
+	- abstract classes are used to model truly abstract concepts and cannot be instantiated
+	- Concrete classes provides the full implementations and can actually be used
+	- Concrete classes though, expose their methods and data structures
+	Q9: explain with an example how java deals with run-time errors
+	- involves try, catch, throw.
+	- code is ran within a try block and if an error an exception obj is created and thrown using the throw statement
+		```java
+		public class test1{
+		public static void main (String[], args){
+			try{
+				throw new Execption("error");
+			}
+			catch (execption e){
+				System.out.println("Caught execption " + e.getMessage());
+			}
+		}
+		}
+```
+Q10: Explain terms inheritance, polymorphism and dynamic biniding with examples
+- inheritance
+	- We have a base class that has some common methods and attributes that the derived classes will inherit while adding their own unique attributes and methods
+	- For example if we have a person base class, it would make sense to inherit that and have the derived class be a student since it is a more specific person
+- Polymorphism
+	- objs of diff classes to be trated as objects of a common superclass single interface to represent different underlying forms
+		- same method names but diff implementations
+	- ex. Circle and Rectangle classes that both derive from Shape
+		- declare a shape reference that can refer to either shape
+		- Shape S;
+		- s = new Rectangle()
+		- s = new Circle()
+- dynamic binding
+	- when a method call is resolved at runtime, not compile time
+	- enables polymorphism by allowing the program to call the right method based on the actual obj
+	- ex. calling draw on shape reference pointing to a circle obj will invoke circles drwaw method
+		- Shape s;
+		- s = new Rectangle;
+		- s.draw()
+		- s = new Circle()
+		- s.draw()
+Q11: polymorphism loss of info and why it is still good
+-  Explain why polymorphic assignments result in a loss of information. In spite of this loss of
+- information, why are they useful, and what language features enable their usefulness. Explain with examples.
+```java
+Student student1 = new GraduateStudent();
+```
+
+```java
+student1.getThesisTitle();
+```
+- Student doesn't have this method so a compile time error occurs
+- Even with the loss of information, we can write generic code that works with any subclass
+- Subtype polymorphism
+- Declared variables of a base type allows them to be rendered to a derived object
+- Dynamic binding 
+- Overriding methods in the actual object’s class at run time
+- “virtual” 
+
+Q12: What is the Object class in Java? Why is it useful? From your experience with C++, do you feel that such a class would be useful in C++? Explain
+- Object can be declared and be referred to any object instance
+- Unifying the methods that java calls
+- Comparing this to c++ it would allow for more flexibility in using classes
+- A side note the inheritance for java is a lot easier to follow then c++ increasing readability for the programmer
+Q13: Explain with a simple example how Java provides support for generic classes.
+```java
+Box<String>  stringBox = new Obj1<>(); 
+    
+Box<Integer> intBox    = new Obj2<>(); 
+```
+- This is very similar to C++’s templates, which allows you to input the objects types allowing for a generic class that can be used in different ways elsewhere
+Q14: What is the Java event model? How is it used to deal with mouseclicks and button clicks?
+- It handles user-generated events like mouse presses, keyboard buttons, etc.
+- If we have a java GUI a user mouse input will create an event object like MouseEvent

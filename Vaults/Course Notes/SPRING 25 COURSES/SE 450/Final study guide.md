@@ -115,9 +115,9 @@ Mod 10
 		- obfuscation 
 			- make it had to id data but not impossible
 	- ASM jump instructions
-		- ![[{1B31137D-96D2-493C-964B-E438CE618FB1}.png]]
-		- ![[{F9DDB610-2E15-4DF0-A927-3BC0DE695BDB}.png]]
-		- ![[{15E828B5-DE97-4632-9DE1-E97A331CFBF9}.png]]
+		![[{1B31137D-96D2-493C-964B-E438CE618FB1}.png]]
+		 ![[{F9DDB610-2E15-4DF0-A927-3BC0DE695BDB}.png]] 
+		![[{15E828B5-DE97-4632-9DE1-E97A331CFBF9}.png]]
 		- c++ to asm https://www.codeconvert.ai/c++-to-assembly-converter
 
 ENCRYPTION STUFF IF NEEDED CHECK D2L
