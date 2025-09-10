@@ -264,7 +264,7 @@ Q 14. What is the Java event model? How is it used to deal with mouseclicks and 
 - It handles user-generated events like mouse presses, keyboard buttons, etc.
 - If we have a java GUI a user mouse input will create an event object like MouseEvent
 
-HW answers
+## HW answers
 Q1: Explain the general subprogram characteristics and define the basic terms associated with subprograms.
 - Subprograms characteristics
 	- Each subprogram has a single entry point
