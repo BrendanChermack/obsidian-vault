@@ -86,4 +86,79 @@ Folk culture and folk cultural regions
 	- crude type of crane
 - Pentanque in Quebec
 	- type of bowling game
+
+
+SUMARRY OF JOHN, "GEOGRAPHY AND CULTURE: AN INVITATION TO EXPLORE"
+The text introduces geography as a broad and dynamic field, not just about maps or capitals. Geography studies both physical systems (like climate, soils, and landforms) and human systems (like population, culture, and land use). It asks not only _where_ things are but also _why_ they are there and _what it means_. Geography uses both quantitative tools (like census data and mapping) and qualitative methods (like interviews and cultural interpretation) to analyze the world.
+
+Cultural geography is presented as a subfield of human geography. It examines how people shape and give meaning to places through behaviors, objects, and ideas. This includes landscapes, cultural products, identities, and everyday practices. Early traditions like environmental determinism argued that environment dictated culture, but Carl Sauer and the Berkeley School challenged this by focusing on culture as an agent shaping landscapes. Later, scholars such as Wilbur Zelinsky emphasized artifacts, sociofacts, and mentifacts as elements of culture, while others critiqued his “superorganic” idea of culture as existing beyond individuals.
+
+The “new cultural geography” shifted focus toward culture as a system of meanings, shaped by power, politics, and discourse. Thinkers like Raymond Williams influenced this approach, viewing culture as a signifying system embedded in social, political, and economic life. This broadened cultural geography to study not just material traits but also media, representation, and identity, while acknowledging culture as contested and plural.
+
+Overall, the text shows cultural geography as an evolving field that bridges physical space and human meaning. It embraces culture as a complex, multifaceted idea—sometimes understood as traits, practices, or objects, and sometimes as systems of meaning—while highlighting how culture and geography together shape the world we live in
+
+**Week 3**
+- Mapping cultural change
+	- cultures are dynamic, ever-changing
+		- spatially (across the earth's surface)
+		- temporally (through time)
+	- spatially and temporally evolving cultures create distinctive regions/landscapes
+	- cultural diffusion
+		- concept to theorize and map cultural change
+	- the spread of ideas, innovations and cultural attitudes, way of life (culture)
+	- diffusion isn't simply random but conforms to patterns
+		- physical geography: rivers, mountains, passes, lakes, soils, climate
+		- technologies of mobility/transportation also determine channels of diffusion
+	- two main types of diffusion: relocation and expansion (contagious and hierarchical)
+	- ![[Pasted image 20250910071539.png]]
+	- ![[Pasted image 20250910071547.png]]
+- Diffusion of folk cultures
+	- regions project outward from source areas: know as cultural hearths
+	- diffusion tends to be contagious expansion diffusion, though relocation diffusion can create new cultural hearths, e.g. Mormon Utah or Oregon overlanders
+	- prevalence of absorbing and permeable barriers: e.g., physical terrain, political boundaries
+	- material culture a key to folk diffusion
+- Diffusion (relocation and contagious expansion) has created traditional folk culture regions across the US
+	- ![[Pasted image 20250910071925.png]]
+- Houses, field system and agricultural buildings (fences and barns), churches and even language and place names are mappable objects indicative of different folk cultures
+- Relocation diffusion
+	- ![[Pasted image 20250910072046.png]]
+- Examples of folk diffusion
+	- agricultural fairs from Yankee region in 1810 across the heartland and Midwest
+		- national by 1912
+		- good example of contagious expansion diffusion
+- ![[Pasted image 20250910072218.png]]
+- Diffusion of popular culture
+	- stages of diffusion
+		- 1. Acceptance of idea or innovation
+		- 2. 'neighborhood effect': rapid growth, contagious diffusion (creates cultural core)
+		- 3. Slower, sustained growth, hierarchical diffusion
+	- impediments to diffusion
+		- 1. Time-distance decay effect (folk culture, or during 'neighborhood effect')
+		- 2. Absorbing barriers: unusual
+		- 3. Permeable barriers: filters
+- The diffusion of hip-hop culture
+	- originated as an inner city, black, youth-oriented culture (hip-hop nation) in late 70s
+		- graffiti, music, fashion, dancing, language, personalities
+	- carney (2003) identifies 3 main culture cores of rap music
+		- east coast
+		- west coast
+		- south coast
+			- miami, new orleans, houston, atlanta, memphis
+	- diffusion of rap music was rapid
+		- suburban/widwestern
+			- beastie
+			- eminem
+			- kid rock
+	- internal
+		- MC Solaar
+		- Duran Duran tribute to public enemy 
+	- global rap
+		- hybrid sounds
+			- traditional(regional) and modern(popular)
+			- social themes: such poverty, racism, migrant crisis
+		- rap as an evolving cultural geography
+- ![[Pasted image 20250910073144.png]]
+- ![[Pasted image 20250910073156.png]]
+- ![[Pasted image 20250910073204.png]]
+- ![[Pasted image 20250910073311.png]]
 - 
