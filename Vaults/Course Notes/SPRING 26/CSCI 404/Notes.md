@@ -483,7 +483,11 @@ Final Exam: 25%
     - Both required for Case 3 to apply
 
 ---
+**Quick Check Before Answering:**
 
+1. Is f(n) **<** watershed? → Case 1 → Answer is **watershed**
+2. Is f(n) **=** watershed? → Case 2 → Answer is **watershed × lg**
+3. Is f(n) **>** watershed? → Case 3 → Answer is **f(n)**
 ## **Summary Comparison Table**
 
 |Aspect|Case 1|Case 2|Case 3|

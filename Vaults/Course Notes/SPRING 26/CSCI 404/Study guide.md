@@ -2279,3 +2279,74 @@ T(n) = 2T(n/2) + n
 2. Use explicit constants: T(n) ≤ cf(n)
 3. Prove by induction
 4. Subtract lower-order terms if needed
+
+# Practice questions
+- T(n) = 2T(n/2) + n
+	- watershed = log_2(2) = 1 => n == f(n): case 2
+	- solving it
+		- f(n) = n = n * Log^0 n
+		- which means k = 0
+		- case 2 general form 
+			- f(n) = Θ(n^(log_b a) · lg^k n) for some k ≥ 0
+			- so basically we want them to be equal using that form and doing log^0 n is 1 so we are just left with n
+- T(n) = 4T(n/2) + n
+	- watershed = log_2(4) = 2 = n^2 > f(n): case 1
+- T(n) = 2T(n/2) + n²
+	- watershed = log_2(2) = 1 = n < f(n^2): case 3
+- T(n) = 16T(n/4) + n
+	- watershed = log_4(16) = 2 = n^2 > f(n): case 1
+- T(n) = 3T(n/3) + n
+	- log_3(3) = 1 = n = f(n): case 2
+- T(n) = 9T(n/3) + n
+	- n^2 > f(n): case 1
+- T(n) = T(n/2) + 1
+	- log_2(1) = 0 =n^0 = 1 = f(1): case 2?
+- T(n) = 2T(n/4) + √n
+	- Log_4(2) = .5 = n^.05 = f(n^.5): case 2
+- T(n) = 3T(n/2) + n
+	- n^1.6 > f(n): case 1
+- T(n) = 6T(n/3) + n²
+	- log_3(6) = n^1.6 < f(n^2): case 3
+**11.** T(n) = 4T(n/2) + n³  
+Solution: Θ(?)
+- Watershed log_2(4) =2 = n^2 < f(n^3): case 3
+	- Conditions
+		- omega(n^(2 + ε)) so basically we take the watershed result (n^2) then we need to have what to add to it to have it equal the f(n) (n^3) so ε is 1
+		- 4f(n/2) ≤ cf(n) | c<1
+			- 4f(n/2)^3
+			- 4n^3/8
+			- n^3 /2 ≤ cn^3
+			- ½ ≤ c
+			- c = ½
+			- ½ < 1 (c<1)
+**12.** T(n) = 8T(n/2) + n²  
+Solution: Θ(?)
+- Watershed log_2(8) = 3 = n^3 > f(n^2): case 1
+	- theta(n^(3 - ε)), ε = 1 = n^2
+	- Θ(n^3)
+**13.** T(n) = T(n/3) + 1  
+Solution: Θ(?)
+- 
+**14.** T(n) = 5T(n/2) + n²  
+Solution: Θ(?)
+- 
+**15.** T(n) = 7T(n/3) + n²  
+Solution: Θ(?)
+- 49n/9 = 9n ≤ c n^2 
+- 
+**16.** T(n) = 16T(n/4) + n²  
+Solution: Θ(?)
+- 
+**17.** T(n) = 27T(n/3) + n²  
+Solution: Θ(?)
+- 
+**18.** T(n) = 2T(n/4) + 1  
+Solution: Θ(?)
+- 
+**19.** T(n) = 2T(n/2) + n lg² n  
+Solution: Θ(?)
+- 
+**20.** T(n) = 4T(n/2) + n² lg n  
+Solution: Θ(?)
+- 
+
