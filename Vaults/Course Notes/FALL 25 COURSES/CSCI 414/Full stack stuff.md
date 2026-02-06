@@ -1,0 +1,238 @@
+- throughput is the number of operations over a given time
+	- number of requests a server can handle
+	- stress test
+- availability
+	- percentage of time the server is available 
+- SLA
+	- service level agree - percentage of uptime
+
+Next assignment use the integration testing doc provided
+
+MongoDB
+- geospatial queries
+	- location-based data
+- use case
+	- nearby locations
+	- mapping and GIS
+	- asset tracking
+		- monitor real-time location of assets
+	- point data
+		- lat and long
+		- multiple points - polygon
+		- finding nearby starbucks
+			- save in db and query to find it
+	- geo-JSON
+		- encoding geographical data structure
+		- points, line string, polygons
+		- https://eric.clst.org/tech/usgeojson
+		- https://geojson.tools/ Visual tester 
+- Geospatial queries in mongodb
+	- indexes can be made
+	- ![[{02EA8EDE-EDB8-4DB9-ABED-CF4C263CF95C}.png]]
+	- ![[{85C6DED0-0182-4354-9FB2-3EF14B026D5D}.png]]
+	- and u can find a restaurant within those coordinates
+- MongoDB finish up
+
+- Networking
+	- bullions of connected commputing devices
+		- hosts = end systems
+		- running network apps at the internet's edge
+	- packet switches
+		- forward packets
+			- routers and switches
+	- communications links
+		- fiber
+		- transmission rate: bandwidth
+	- networks
+		- collection of devices, routers, links
+			- managed by an org
+	- internet is a network of networks
+		- interconnected isps
+	- routing between routers
+	- protocols
+		- control sending, receiving of messages
+		- ex: HTTP, TCP. WIFI, etc.
+	- internet standards
+		- RFC: request for comments
+		- IEFT: Internet Engineering Task Force
+	- Infrastructure
+		- provides services to applications
+	- provides programming interface to distributed applications
+		- service 1 and service 2
+		- service 2 needs something from service 1
+		- we need to know the requirements for the service 2 interface
+		- the interface is needed to get the information
+	- Protocols
+		- rules for sending requests
+		- ex:
+			- TCP connection request
+			- response
+			- get request
+			- sends file
+	- internet protocol stack
+		- applications layer
+			- supporting network apps
+				- http
+		- transport layer
+			- tcp udp
+		- network layer
+			- routing of datagrams
+		- link
+			- data trans
+		- physical layer
+	- services, layering and encapsulation
+		- 5 or 7 layers
+		- osi model
+			- yt video
+	- gateway connects 2 networks
+	- firewall filters traffic
+		- permits or blocks packets
+	- proxy
+		- a gateway that manages traffic on your behalf 
+		- hide your IP
+	- Common misunderstandings (common sense)
+		- Network reliability
+		- latency is zero
+		- bandwidth is infinite
+		- network is secure
+		- technology doesn't change
+		- one admin
+		- transport cost is zero
+		- The network is homogeneous
+	- 32 bit identifier
+		- 8 bit per octet 
+		  - 8 bits of binary per octet
+			- 192 = 11000000
+			- 168 = 10101000
+			- etc
+	- each interface has an IP address
+		- connection between host/router and physical link
+	- interfaces like type c, rj-45
+	- interface limitations
+		- speeds on router not giving full speed
+	- How do we get an IP address?
+		- how does a host get an IP
+			- hardcoded
+			- manually assigned
+			- 0 and 255 are reserved so 254 are free to use
+		- how does a network get an IP 
+	- DHCP
+		- dynamic host config protocol: dynamically get address from as server
+- DHCP:
+	- renew its lease on address in use
+	- allows the reuse of IP addresses
+	- support mobile users who join/leave
+	- DHCP is inside the router
+	- ![[{D2FBE38A-21B7-42D9-A198-93416684EEF6}.png]]
+	- 255.255.255.255 is a broadcast message
+	- sent to all devices
+	- new IP address is sent and needs to be accepted
+		- ack
+- every device has an Ip address
+- ICANN
+	- responsible for assigning IP addresses
+	- allocated the large blocks of addresses
+	- ISP allocated IP addresses too
+- IP addresses
+	- public IP 
+		-IP that can be accessed anywhere on the internet
+	- private IP
+		- restricted to local network
+		- localhost
+		- 127.0.0.1
+	- static 
+		- unchanging IP
+	- dynamic DHCP
+
+
+
+- DORA
+	- DevOps Research and Assessment
+	- lead time for changes
+		- time between committing code changes to the trunk branch and when it is in a deployable state
+		- main branch 
+			- branch that is deployed
+	- Change failure rate
+		- percentage of code changes that require hot fixes
+		- This does not measure failures during testing and fixed
+	- Deployment freq
+		- number of deployments into prod per unit time
+		- amazon has thousands of deployments per day
+	- mean time to recovery
+		- how long it takes to recover from a partial service interruption or total failure
+
+DOCKER
+- nothing new
+
+REDIS
+- All data stored in RAM
+- key value pairs, cache, msg broker
+- use cases
+	- Caching
+	- real-time analytics
+	- session store
+		- stores session data
+	- msg queues 
+		- msg broker for building scalable and distributed systems
+- docker install for it
+
+Deployment
+- traceability
+	- track all elements of a service in prod
+	- code and deps
+- repeatability
+	- the same actions with the same artifacts you get the same result
+	- Ex: test cases 
+	- problem when building a new version could be fetched
+	- could cause tests to fail
+	- db tests are harder 
+- flaky tests
+	- no repeatable tests 
+	- multi thread test
+		- one changes data the other reads the data
+	- logs when testing
+- security
+	- 15-20% breaches are caused by insiders
+	- ways to prevent
+		- limit pipeline access
+		- keep record of changes and the originator 
+		- notifications when the pipeline has been updated/modded
+- Envs
+	- place to performs tests, write code
+	- isolated from prod
+	- req
+	- elements
+		- machine or machines or vms
+			- containers
+		- infra structures
+			- ex load balancers
+		- input source for tests
+		- db
+		- config parameters
+		- external services
+- collection of virtual machines or containers
+	- dev single module is tested
+		- unit test
+	- integration is service is tested
+		- whole thing
+	- staging
+		- service plus other services
+- source of input
+	- test harness
+		- prepare the env to run the test
+		- jest
+	- dynamic workload generator
+		- sql or python script to add a bunch of data
+	- replaying a previously captured input from live users
+		- mimic live user to generate more test data
+	- from live users
+- db
+	- restored after each test
+	- to make tests work
+- env lifecycle
+	- create an env
+	- used 
+	- cleaned up
+	- creation and clean up can be automated
+	- 
+	  

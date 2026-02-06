@@ -76,6 +76,16 @@ Software products -
 		- customer notifications of new items
 
 
+9/11
+- ![[{A071681D-3522-4AC3-B38A-159513ED9448}.png]]
+- ![[{753A4958-6DD6-4B72-822D-32B0B6D4D61B}.png]]
+- red is most common
+- scrum
+	- 
+
+- ![[{3C4FA248-820E-424A-A024-55776D00C783}.png]]
+- 
+
 
 
 
