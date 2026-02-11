@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vaults/Course Notes/FALL 25 COURSES/CSCI 414/Full stack stuff.md",
+                "file": "Vaults/Course Notes/SPRING 26/CSCI 440/Chapter 2/Chapter 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Full stack stuff"
+              "title": "Chapter 2"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vaults/Course Notes/SPRING 26/CSCI 404/quiz week 4.md",
+                "file": "Vaults/Course Notes/SPRING 26/CSCI 440/Chapter 2/Chapter 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "quiz week 4"
+              "title": "Chapter 2"
             }
           },
           {
@@ -214,26 +214,30 @@
   },
   "active": "02424a0df7e65dad",
   "lastOpenFiles": [
-    "Vaults/Course Notes/SPRING 26/CSCI 404/week 3/Quiz 3 practice.md",
+    "{23440110-CC69-4408-8966-A9E04103443D}.png",
+    "Vaults/Course Notes/FALL 25 COURSES/CSCI 414/Full stack stuff.md",
+    "Vaults/Course Notes/SPRING 26/CSCI 440/Chapter 2/Chapter 2.md",
+    "{897B4707-E22D-4839-AF36-EB4B99821C3C}.png",
+    "{A65E5E7B-A3F6-4FF6-9A2E-6E439E10E877} 1.png",
+    "{A65E5E7B-A3F6-4FF6-9A2E-6E439E10E877}.png",
+    "{460BBB26-CFFA-4D7C-8092-ECAA8AFDAC58}.png",
+    "{DE00F2C6-F4BA-4E25-99D6-BFCE110BEBEC}.png",
+    "{10F16A63-D48C-48CB-A3C8-AD6998877D40}.png",
+    "{14AB661D-6984-4C6F-BC9A-B504CD85785E}.png",
+    "{A09A47D9-AEBE-4D95-A92F-737480A652EA}.png",
+    "{B042D2D5-753C-4859-A4F1-4D7A8A7AF1D6}.png",
+    "{E9308C95-D7D5-4281-9B18-72CD695761E4}.png",
     "Vaults/Course Notes/SPRING 26/CSCI 404/quiz week 4.md",
+    "Vaults/Course Notes/SPRING 26/CSCI 440/Chapter 2",
+    "Vaults/Course Notes/SPRING 26/CSCI 440",
+    "Vaults/Course Notes/SPRING 26/CSCI 404/week 3/Quiz 3 practice.md",
     "Vaults/Course Notes/SPRING 26/CSCI 404/week 3",
-    "Vaults/Course Notes/SPRING 26/media/{C95CF2C5-DF93-4BAA-AE77-5EC3BA7E5E1C}.png",
-    "Vaults/Course Notes/SPRING 26/media/{B1321C9C-894E-44EF-BB1F-9E3D9C0272EB}.png",
-    "Vaults/Course Notes/SPRING 26/media/{79B86966-88E8-4FF4-B41C-70CF2DDF00C7}.png",
-    "Vaults/Course Notes/SPRING 26/media/{627E579F-63D4-4AED-A93A-5F81BACBB799}.png",
-    "Vaults/Course Notes/SPRING 26/media/{5C514D45-D4E8-4049-B769-A0CAE94B00B2}.png",
-    "Vaults/Course Notes/SPRING 26/media/{382C96B1-7F87-407E-88D1-98C1B0AB80A6}.png",
-    "Vaults/Course Notes/SPRING 26/media/Pasted image 20260126161311.png",
-    "Vaults/Course Notes/SPRING 26/media/Pasted image 20260126161253.png",
-    "Vaults/Course Notes/SPRING 26/media/Pasted image 20260126160833.png",
-    "Vaults/Course Notes/SPRING 26/media/Pasted image 20260126160813.png",
     "Vaults/Course Notes/SPRING 26/CSCI 404/week 3/Study week 3guide.md",
     "Vaults/Course Notes/SPRING 26/CSCI 404/Notes.md",
     "Vaults/Course Notes/SPRING 26/media",
     "Vaults/Course Notes/SPRING 26/CSCI 404",
     "Vaults/Course Notes/SPRING 26",
     "Vaults/Course Notes/FALL 25 COURSES/CSCI 414/unit 1 DB.md",
-    "Vaults/Course Notes/FALL 25 COURSES/CSCI 414/Full stack stuff.md",
     "Vaults/Course Notes/FALL 25 COURSES/SE 465/unit 1.md",
     "Vaults/Course Notes/FALL 25 COURSES/GEOG 270/Module 1.md",
     "Vaults/Course Notes/FALL 25 COURSES/GEOG 270",
@@ -243,11 +247,9 @@
     "Vaults/Course Notes/FALL 25 COURSES/media",
     "Vaults/Course Notes/SPRING 25 COURSES/CSCI 330/Final study guide.md",
     "Vaults/Course Notes/FALL 25 COURSES/CSCI 414",
-    "Vaults/Course Notes/FALL 25 COURSES",
     "Vaults/General Vault/Learning stocks/1. Stock Market Basics/5. Chart Patterns.md",
     "Vaults/General Vault/Learning stocks/5. Market Context/3. Volume & Volatility & Momentum (VVM).md",
     "Vaults/Course Notes/SPRING 25 COURSES/CSCI 332/Final study guide.md",
-    "Vaults/Course Notes/SPRING 25 COURSES/CSCI 332",
     "Vaults/General Vault/Learning stocks/5. Market Context/2. Understand market context.md",
     "Vaults/General Vault/Learning stocks/5. Market Context/1. Honest truths about day trading.md",
     "Vaults/General Vault/Learning stocks/2. Getting Started/3. Trading Mentality.md",
