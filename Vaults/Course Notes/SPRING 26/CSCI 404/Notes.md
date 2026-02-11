@@ -557,3 +557,33 @@ Final Exam: 25%
     - T(n) = 7T(n/2) + Θ(n²)
     - Reduces multiplications from 8 to 7
     - Gets n^(log₂ 7) ≈ n^2.807 instead of n³
+
+## Week 5 quick sort
+- Goals
+	- worse case Theta n^2
+	- randomized version has expected theta nlon
+	- constants hidden are small
+	- sorts in place
+	- good cache performance
+- Quicksort is 3 step divide and conquer
+- To sort the subarray A[p:r]
+1. Divide: partition A[p:r] into two possibly empty subarrays A[p:q-1] and A[q+1:r] such that each element in the first subarray A[p:q-1] is ≤ A[q] and A[q] is ≤ each element in the second subarray A[q+1:r]
+2. Conquer: sort the two subarray by recursive calls to quick sort
+3. No worked is needed to combine the subarrays because they are sorted in place
+- Perform the divide step by a procedures partition which returns the index q that marks the position separating the subarrays
+- Pseudocode
+	- ![[Pasted image 20260211144357.png]]
+	- ![[Pasted image 20260211144416.png]]
+	- ![[Pasted image 20260211144532.png]]
+	- ![[Pasted image 20260211144842.png]]
+- ![[Pasted image 20260211144902.png]]
+- ![[Pasted image 20260211145002.png]]
+- ![[Pasted image 20260211145036.png]]
+- ![[Pasted image 20260211145143.png]]
+- ![[Pasted image 20260211145301.png]]
+- ![[Pasted image 20260211145401.png]]
+- ![[Pasted image 20260211145428.png]]
+- ![[Pasted image 20260211145548.png]]
+- ![[Pasted image 20260211145646.png]]
+- ![[Pasted image 20260211145815.png]]
+- 
