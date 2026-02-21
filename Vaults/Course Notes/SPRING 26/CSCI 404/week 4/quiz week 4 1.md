@@ -32,11 +32,11 @@ In a 1-indexed array representation of a heap, if a node is at index i = 6, what
 |![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.23576 "Unselected")|12|
 |![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.23576 "Unselected")|5|
 
-|   |   |
-|---|---|
-|Hide question 2 feedback|   |
-|||
-|## Feedback<br><br>For any node at index i, its parent is at index ⌊i/2⌋. So PARENT(6) = ⌊6/2⌋ = 3<br><br>Correct! PARENT(i) = ⌊i/2⌋ = ⌊6/2⌋ = 3|   |
+|                                                                                                                                                  |     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
+| Hide question 2 feedback                                                                                                                         |     |
+|                                                                                                                                                  |     |
+| ## Feedback<br><br>For any node at index i, its parent is at index ⌊i/2⌋. So PARENT(6) = ⌊6/2⌋ = 3<br><br>Correct! PARENT(i) = ⌊i/2⌋ = ⌊6/2⌋ = 3 |     |
 
 |   |   |   |
 |---|---|---|
@@ -561,3 +561,379 @@ Match each heap operation to its worst-case time complexity on a heap of n eleme
 | Hide question 10 feedback                                                                                                                          |     |
 |                                                                                                                                                    |     |
 | ## Feedback<br><br>MAX = O(1) (just read A[1]); EXTRACT-MAX & INCREASE-KEY = O(log n) (traverse height); BUILD-HEAP = O(n) (surprising but true!). |     |
+## quiz 2
+|   |   |   |
+|---|---|---|
+|**Question 1**||1 / 1 point|
+
+Which input causes the WORST-CASE performance for the basic (non-randomized) QUICKSORT algorithm?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|An array that is already sorted in increasing order|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|An array with all identical elements|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|An array sorted in decreasing order|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|A randomly shuffled array|
+
+|   |   |
+|---|---|
+|Hide question 1 feedback|   |
+|||
+|## Feedback<br><br>Sorted array is worst case! Each pivot is the largest element, creating maximally unbalanced 0-to-(n-1) partitions. Recurrence: T(n) = T(n-1) + Θ(n) = Θ(n²).<br><br>Correct! With pivot = A[r] (largest), we get 0-to-(n-1) splits every time, leading to Θ(n²).|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 2**||1 / 1 point|
+
+What is the worst-case running time of QUICKSORT on an array of n elements?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Θ(n²)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(n log n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(log n)|
+
+|   |   |
+|---|---|
+|Hide question 2 feedback|   |
+|||
+|## Feedback<br><br>Worst-case: T(n) = T(n-1) + T(0) + Θ(n) = T(n-1) + Θ(n). This sums to Θ(1+2+...+n) = Θ(n²).<br><br>Correct! Worst case occurs with maximally unbalanced partitions (0 to n-1 splits).|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 3**||1 / 1 point|
+
+In the BEST-CASE scenario, how does PARTITION split the array at each level of recursion?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Each side has exactly n/2 elements (perfectly balanced)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|One side has all n-1 elements, the other has 0|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|One side has 2n/3 elements, the other has n/3|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|The pivot is always the smallest element|
+
+|   |   |
+|---|---|
+|Hide question 3 feedback|   |
+|||
+|## Feedback<br><br>Best case: 50-50 splits at every level. Recurrence T(n) = 2T(n/2) + Θ(n) solves to Θ(n log n) by Master Theorem case 2.<br><br>Correct! Best case: perfectly balanced splits give T(n) = 2T(n/2) + Θ(n) = Θ(n log n).|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 4**||2 / 2 points|
+
+Suppose PARTITION always produces a 9-to-1 split (one side has 9n/10 elements, the other n/10). What is the asymptotic running time?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Θ(n log n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(n²)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(n log² n)|
+
+|   |   |
+|---|---|
+|Hide question 4 feedback|   |
+|||
+|## Feedback<br><br>Key insight: 9-to-1 splits still give O(log n) depth! Deeper side: log₁₀/₉ n levels. Each level: Θ(n) work. Total: Θ(n log n).<br><br>Correct! ANY constant-proportional split gives Θ(n log n). The constant changes but not the asymptotic behavior.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 5**||2 / 2 points|
+
+Which partition split ratios would result in Θ(n log n) running time? (Select all that apply)
+
+|   |   |
+|---|---|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|50-50 split (perfectly balanced)|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|90-10 split (one side is 9 times larger)|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|75-25 split|
+|![Unselected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box-unchecked.svg "Unselected")|99-1 split|
+|![Unselected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box-unchecked.svg "Unselected")|(n-1)-to-1 split (maximally unbalanced)|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|33-67 split|
+
+|   |   |
+|---|---|
+|Hide question 5 feedback|   |
+|||
+|## Feedback<br><br>ANY constant-proportional split (c·n to (1-c)·n where 0 < c < 1) gives Θ(n log n). Only maximally unbalanced splits cause Θ(n²)!<br><br>Correct! T(n) = 2T(n/2) + Θ(n) = Θ(n log n)<br><br>Correct! Constant proportional split still gives O(log n) depth.<br><br>Correct! Still constant proportional - depth is O(log n).<br><br>Correct! Constant proportional gives Θ(n log n).|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 6**||2 / 2 points|
+
+If PARTITION always produces a 1/3 to 2/3 split, what is the HEIGHT of the recursion tree?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Θ(log n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(√n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Θ(log² n)|
+
+|   |   |
+|---|---|
+|Hide question 6 feedback|   |
+|||
+|## Feedback<br><br>Longest path: n → 2n/3 → (2/3)²n → ... → 1. Solve (2/3)^h · n = 1: h = log₃/₂ n = Θ(log n).<br><br>Correct! Depth on shorter path: log₃ n. Depth on longer path: log₃/₂ n. Both are Θ(log n).|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 7**||1 / 1 point|
+
+True or False: Randomized QUICKSORT eliminates the Θ(n²) worst-case running time, guaranteeing Θ(n log n) performance on all inputs.
+
+|   |   |   |
+|---|---|---|
+||![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|True|
+||![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|False|
+
+|   |   |
+|---|---|
+|Hide question 7 feedback|   |
+|||
+|## Feedback<br><br>Randomization changes WHEN worst-case occurs (extremely rare, input-independent) but not THAT it exists. We guarantee expected O(n log n), not worst-case.<br><br>Correct! The Θ(n²) worst-case still exists (if we're very unlucky with random choices), but no input can force it. We get Θ(n log n) EXPECTED time.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 8**||1 / 1 point|
+
+Why is QUICKSORT often preferred in practice over MERGESORT, despite having worse worst-case performance?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|QuickSort has smaller constant factors and better cache locality, plus it sorts in-place|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|QuickSort has better worst-case guarantees than MergeSort|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|QuickSort is stable while MergeSort is not|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|QuickSort uses less space than HeapSort|
+
+|   |   |
+|---|---|
+|Hide question 8 feedback|   |
+|||
+|## Feedback<br><br>In practice: QuickSort's small constants + good cache locality + in-place sorting + rare worst-case (with randomization) often beats MergeSort's theoretical guarantees.<br><br>Correct! QuickSort's Θ(n log n) has smaller constants than MergeSort's, better cache performance, and uses less space.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 9**||1 / 1 point|
+
+What is the space complexity of QUICKSORT (beyond the input array)?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|O(log n) for the recursion stack in the average case|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|O(1) - it sorts completely in place|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|O(n) - same as the input size|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|O(n log n) to store all recursion frames|
+
+|   |   |
+|---|---|
+|Hide question 9 feedback|   |
+|||
+|## Feedback<br><br>Average recursion depth: O(log n). Each call uses O(1) space. Total: O(log n) auxiliary space. (Worst case: O(n) if very unbalanced.)<br><br>Correct! Recursion depth is O(log n) on average, with O(1) space per call. Worst-case: O(n) stack depth.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 10**||1 / 1 point|
+
+If PARTITION is called on a subarray of size 100, how much work (in Θ-notation) does it perform? Write your answer as Θ(expression).
+
+|   |   |   |
+|---|---|---|
+|Answer:|Θ(100)||
+
+|                                                                                                          |     |
+| -------------------------------------------------------------------------------------------------------- | --- |
+| Hide question 10 feedback                                                                                |     |
+|                                                                                                          |     |
+| ## Feedback<br><br>PARTITION does Θ(n) work where n is the subarray size. For n=100, that's Θ(100) work. |     |
+## quiz 3
+|   |   |   |
+|---|---|---|
+|**Question 1**||2 / 2 points|
+
+You work at a streaming service with 50 million users. Every night you must sort viewing history by timestamps to generate recommendations. The data arrives pre-sorted by user ID. Which algorithm should you AVOID?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Basic (non-randomized) QuickSort with pivot = last element|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Randomized QuickSort|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|MergeSort|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|HeapSort|
+
+|   |   |
+|---|---|
+|Hide question 1 feedback|   |
+|||
+|## Feedback<br><br>Pre-sorted data triggers Θ(n²) worst-case in basic QuickSort! With 50M records, that's 2.5 quadrillion operations vs. 1.7 billion with Θ(n log n). Use randomized version!<br><br>Correct! Pre-sorted data is QuickSort's worst case! Use randomized QuickSort or a different algorithm.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 2**||2 / 2 points|
+
+Your mobile game needs to sort 1000 player scores every time the leaderboard updates. Updates happen 100 times per second. Memory is tight. Which algorithm is BEST?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Randomized QuickSort - fast average case with minimal memory|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|MergeSort - guaranteed O(n log n)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|HeapSort - O(1) space and O(n log n) guaranteed|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Insertion sort - simple and in-place|
+
+|   |   |
+|---|---|
+|Hide question 2 feedback|   |
+|||
+|## Feedback<br><br>For n=1000 with frequent updates: QuickSort's small constants and O(log n) ≈ 10 stack frames is perfect. MergeSort's O(n) = 1000 extra elements is wasteful.<br><br>Correct! Small constant factors + O(log n) space + excellent cache performance = perfect for real-time small datasets.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 3**||2 / 2 points|
+
+In a tech interview, you're asked: 'I'll give you any input you want to test your QuickSort implementation. Show me it runs fast.' What input should you AVOID giving them?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|A sorted array (if using basic QuickSort)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|A random array|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|An array with all identical elements|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|A reverse-sorted array|
+
+|   |   |
+|---|---|
+|Hide question 3 feedback|   |
+|||
+|## Feedback<br><br>Never volunteer your algorithm's worst-case input! For basic QuickSort, that's sorted arrays. In real interviews: always use randomized QuickSort or mention you would!<br><br>Correct! If your implementation is basic QuickSort, sorted input triggers Θ(n²). Don't reveal your algorithm's weakness!|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 4**||2 / 2 points|
+
+Your team is choosing a sorting algorithm for a new system. When should you AVOID QuickSort? (Select all scenarios where QuickSort is a poor choice)
+
+|   |   |
+|---|---|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|You need guaranteed O(n log n) worst-case time with lives depending on it (medical device)|
+|![Unselected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box-unchecked.svg "Unselected")|You're sorting millions of records in a database|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|You need a stable sort to maintain relative order of equal elements|
+|![Unselected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box-unchecked.svg "Unselected")|Memory is limited and you need to sort in-place|
+|![Selected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box.svg "Selected")|Your adversary can choose the input and knows you're using basic QuickSort|
+|![Unselected](https://s.brightspace.com/lib/bsi/2026.1.213/images/tier2/check-box-unchecked.svg "Unselected")|The data is randomly distributed|
+
+|   |   |
+|---|---|
+|Hide question 4 feedback|   |
+|||
+|## Feedback<br><br>Avoid QuickSort when: (1) need worst-case guarantees, (2) need stability, (3) adversarial input with basic version. Otherwise, it's usually best!<br><br>Correct! Cannot risk Θ(n²) worst-case in safety-critical systems. Use HeapSort or MergeSort.<br><br>Correct! QuickSort is not stable. Use MergeSort if stability is required.<br><br>Correct! They can force Θ(n²) worst-case. Use randomized version or different algorithm.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 5**||1 / 1 point|
+
+You're explaining QuickSort at a party using guests sorted by height. You pick the tallest person as 'pivot'. What happens?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Everyone ends up on the 'shorter' side; the tall side is empty - worst-case partition!|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|You get a perfectly balanced partition|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Half the people go to each side|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|The algorithm fails because you need the median|
+
+|   |   |
+|---|---|
+|Hide question 5 feedback|   |
+|||
+|## Feedback<br><br>Picking the maximum (or minimum) gives 0-to-(n-1) split - worst case! This is exactly what happens with sorted arrays in basic QuickSort. Pick randomly instead!<br><br>Correct! Picking the maximum creates maximally unbalanced partition. This is why choosing last element of sorted array is terrible!|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 6**||2 / 2 points|
+
+Your colleague says: 'QuickSort is getting 90-10 splits on average. That's terrible! We should switch algorithms.' What's your response?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|'Actually, 90-10 splits still give Θ(n log n) performance! No need to switch.'|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|'You're right, we need 50-50 splits or it will be Θ(n²)'|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|'90-10 is okay, but 80-20 would be much better asymptotically'|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|'We should immediately switch to MergeSort'|
+
+|   |   |
+|---|---|
+|Hide question 6 feedback|   |
+|||
+|## Feedback<br><br>90-10 splits: T(n) = T(0.9n) + T(0.1n) + Θ(n). Depth is O(log₁₀/₉ n) = O(log n). Each level: Θ(n). Total: Θ(n log n). Perfectly fine!<br><br>Correct! Any constant-proportional split gives Θ(n log n). The constant changes but asymptotic behavior is the same.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 7**||2 / 2 points|
+
+Despite Θ(n²) worst-case, QuickSort is the default sort in many languages (Java, C++, Python for primitives). Why do engineers trust it?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|Randomization makes worst-case input-independent, and practical performance beats alternatives|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|They don't know about the Θ(n²) worst-case|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|The worst-case never actually happens in practice|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|QuickSort is actually always faster than HeapSort and MergeSort|
+
+|   |   |
+|---|---|
+|Hide question 7 feedback|   |
+|||
+|## Feedback<br><br>Real-world QuickSort uses: randomization (no adversarial input), small constants (~2-3× faster than MergeSort in practice), great cache locality, low space. Worth the tiny worst-case risk!<br><br>Correct! Randomized QuickSort: (1) no input forces worst-case, (2) small constants, (3) good cache behavior, (4) low space.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 8**||2 / 2 points|
+
+Match each scenario to the BEST sorting algorithm:
+
+|   |   |   |
+|---|---|---|
+|\|   \|   \|   \|   \|<br>\|---\|---\|---\|---\|<br>\|__4__\|MergeSort (stable sorting algorithm)\|<br>\|__3__\|Randomized QuickSort (excellent average case)\|<br>\|__1__\|Randomized QuickSort (small constants, low space)\|<br>\|__2__\|HeapSort or MergeSort (guaranteed O(n log n))\|||\|   \|   \|<br>\|---\|---\|<br>\|**1**.\|Small dataset (n=100), real-time sorting, memory constrained\|<br>\|**2**.\|Safety-critical system, need guaranteed worst-case performance\|<br>\|**3**.\|Large database with random data, performance matters\|<br>\|**4**.\|Need stable sort to maintain order of equal elements\||
+
+|   |   |
+|---|---|
+|Hide question 8 feedback|   |
+|||
+|## Feedback<br><br>QuickSort excels for average-case performance with low space. Use HeapSort/MergeSort for guarantees. Use MergeSort for stability.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 9**||2 / 2 points|
+
+A student asks: 'If randomization is so good, why don't we randomize HeapSort and MergeSort too?' What's the best answer?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|'They don't need it - they already have good worst-case guarantees regardless of input order'|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|'That's a great idea! Randomized HeapSort would be even faster'|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|'We do randomize them - all modern sorting uses randomization'|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|'Randomization only works for divide-and-conquer algorithms'|
+
+|   |   |
+|---|---|
+|Hide question 9 feedback|   |
+|||
+|## Feedback<br><br>QuickSort needs randomization because pivot choice matters - bad pivots give Θ(n²). HeapSort and MergeSort have Θ(n log n) regardless of input - nothing to improve!<br><br>Correct! HeapSort and MergeSort are always Θ(n log n). Randomization helps when input order affects performance, which doesn't happen for them.|   |
+
+|   |   |   |
+|---|---|---|
+|**Question 10**||2 / 2 points|
+
+You're optimizing QuickSort for a system that sorts arrays of size n=1,000,000. You discover partitions are consistently 60-40. Should you be worried?
+
+|   |   |
+|---|---|
+|![Selected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioChecked.svg?v=20.26.1.24929 "Selected")|No - 60-40 splits still give O(n log n) with depth ≈ 28 levels vs. ≈ 20 for perfect splits|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Yes - you should aim for perfect 50-50 splits or performance will be quadratic|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|Yes - with n=1,000,000, even small imbalances become Θ(n²)|
+|![Unselected](https://stcloudstate.learn.minnstate.edu/d2l/img/0/QuestionCollection.Main.radioUnchecked.svg?v=20.26.1.24929 "Unselected")|No - because the constant factors matter more than the split ratio|
+
+|                                                                                                                                                                                                                                                                           |     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| Hide question 10 feedback                                                                                                                                                                                                                                                 |     |
+|                                                                                                                                                                                                                                                                           |     |
+| ## Feedback<br><br>Depth with c-to-(1-c) splits = O(log n) for any 0 < c < 1. Even 99-1 gives O(log n)! Only maximally unbalanced (n-1)-to-1 gives O(n) depth.<br><br>Correct! log₅/₃ 1000000 ≈ 28. Compare to log₂ 1000000 ≈ 20. Only 40% more levels, still Θ(n log n)! |     |

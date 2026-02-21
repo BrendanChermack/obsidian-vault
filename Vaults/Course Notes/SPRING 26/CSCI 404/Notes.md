@@ -586,4 +586,109 @@ Final Exam: 25%
 - ![[Pasted image 20260211145548.png]]
 - ![[Pasted image 20260211145646.png]]
 - ![[Pasted image 20260211145815.png]]
-- 
+
+
+
+Week 6
+- ![[Pasted image 20260219183721.png]]
+- ![[Pasted image 20260219183815.png]]
+- ![[Pasted image 20260219184036.png]]
+- ![[Pasted image 20260219184144.png]]
+- ![[Pasted image 20260219184234.png]]
+- ![[Pasted image 20260219184304.png]]
+- ![[Pasted image 20260219184346.png]]
+- ![[Pasted image 20260219184419.png]]
+- ![[Pasted image 20260219184511.png]]
+- ![[Pasted image 20260219184544.png]]
+- ![[Pasted image 20260219184650.png]]
+- ![[Pasted image 20260219184725.png]]
+- ![[Pasted image 20260219184753.png]]
+- ![[Pasted image 20260219184811.png]]
+- ![[Pasted image 20260219184857.png]]
+- ![[Pasted image 20260219185030.png]]
+- ![[Pasted image 20260219185116.png]]
+- ![[Pasted image 20260219185148.png]]
+- ![[Pasted image 20260219185203.png]]
+- ![[Pasted image 20260219185212.png]]
+- ![[Pasted image 20260219185224.png]]
+- ![[Pasted image 20260219185236.png]]
+- ![[Pasted image 20260219185252.png]]
+- ![[Pasted image 20260219185303.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
